@@ -1,0 +1,82 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: rgb(200, 156, 92);
+  border: 2px solid #999;
+  float: left;
+  height: 68px;
+  margin-right: -2px;
+  margin-top: -2px;
+  padding: 0;
+  text-align: center;
+  width: 68px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.chesspiece {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 4px;
+  
+}
+
+.chesspiece.none{
+  display: none;
+}
+
+.chesspiece.white{
+  background: white;
+  box-shadow: .01rem .01rem .1rem rgba(0, 0, 0, .5), 0 0 .05rem rgba(240, 240, 240, .5), .05rem .05rem .01rem rgba(255, 255, 255, .15) inset, .1rem .1rem .1rem rgba(255, 255, 255, .05) inset, -.05rem -.05rem .25rem rgba(0, 0, 0, .15) inset, -.1rem -.1rem .35rem rgba(0, 0, 0, .05) inset;
+}
+
+.chesspiece.black{
+  background: black;
+  box-shadow: .01rem .01rem .1rem rgba(0, 0, 0, .5), 0 0 .05rem rgba(240, 240, 240, .5), .05rem .05rem .01rem rgba(255, 255, 255, .15) inset, .1rem .1rem .1rem rgba(255, 255, 255, .05) inset, -.05rem -.05rem .25rem rgba(0, 0, 0, .15) inset, -.1rem -.1rem .35rem rgba(0, 0, 0, .05) inset;
+}
+
+.chesspiece.status{
+  width: 16px;
+  height: 16px;
+  float: right;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game-board{
+  box-shadow: .1rem .1rem .05rem rgba(0,0,0,.5),
+                         -.1rem -.1rem .05rem rgba(0,0,0,.5) ;
+  height: 560px;
+  width: 560px;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
